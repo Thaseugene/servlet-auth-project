@@ -1,0 +1,6 @@
+by\itacademy\servlet\repository\UserRepository.class
+by\itacademy\servlet\model\User.class
+by\itacademy\servlet\controller\LoginController.class
+by\itacademy\servlet\controller\MainController.class
+by\itacademy\servlet\controller\RegistrationController.class
+by\itacademy\servlet\storage\UserStorage.class
