@@ -16,7 +16,8 @@
             <div class="col-md-12 login-form-1">
                 <h5>Create new account</h5>
                 <p class="h6" style="color:lightseagreen;">${output}</p>
-                <form action="register" method="post">
+                <form action="auth" method="post">
+                    <input type="hidden" name="actionType" value="register">
                     <div class="form-group">
                         <input type="text" class="form-control" name="login" placeholder="Enter new login" value=""/>
                     </div>
@@ -31,7 +32,7 @@
                         <button class="btnSubmit" type="submit" value="register">Register</button>
                     </div>
                     <div class="form-group">
-                        <a href="login" class="To-login">To login page</a>
+                        <a href="${pageContext.request.contextPath}/login.jsp" class="To-login">To login page</a>
                     </div>
                 </form>
             </div>

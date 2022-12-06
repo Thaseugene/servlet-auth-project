@@ -8,15 +8,14 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
-
 <div class="container form-container">
     <div class="row justify-content-center align-items-center">
         <div class="col-md-6">
             <div class="col-md-12 login-form-1">
                 <h5>Please, enter login and password</h5>
-                <form action="login" method="post">
+                <form action="auth" method="post">
+                    <input type="hidden" name="actionType" value="login">
                     <div class="form-group">
                         <input type="text" class="form-control" name="login" placeholder="Login name" value=""/>
                     </div>
@@ -28,7 +27,7 @@
                         <button class="btnSubmit" type="submit" value="Login">Sign in</button>
                     </div>
                     <div class="form-group">
-                        <a href="register" class="Not-a-Member">Not a member ?</a>
+                        <a href="${pageContext.request.contextPath}/registration.jsp" class="Not-a-Member">Not a member ?</a>
                     </div>
                 </form>
             </div>

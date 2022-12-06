@@ -27,10 +27,10 @@
                 </div>
                 <div class="row">
                     <div class="col d-flex justify-content-center">
-                        <a href="login" class="btn btn-primary" role="button">Login</a>
+                        <a href="${pageContext.request.contextPath}/login.jsp" class="btn btn-primary" role="button">Login</a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="register" class="btn btn-primary" role="button">Register</a>
+                        <a href="${pageContext.request.contextPath}/registration.jsp" class="btn btn-primary" role="button">Register</a>
                     </div>
                 </div>
             </div>
