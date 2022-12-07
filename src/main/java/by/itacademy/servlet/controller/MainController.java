@@ -10,7 +10,7 @@ public class MainController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
     private static final String LOGIN_TEMPLATE = "login";
-    private static final String OUTPUT_TEMPLATE = "error";
+    private static final String OUTPUT_TEMPLATE = "output";
     private static final String MAIN_PAGE_PATH = "/mainPage.jsp";
 
 	@Override

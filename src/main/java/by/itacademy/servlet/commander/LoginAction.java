@@ -39,7 +39,8 @@ public class LoginAction implements Action {
 		}
 	}
 
-	private void sendOutput(HttpServletRequest req, String output, HttpServletResponse resp) throws ServletException, IOException {
+	private void sendOutput(HttpServletRequest req, String output, HttpServletResponse resp)
+			throws ServletException, IOException {
 		req.setAttribute(ERROR_TEMPLATE, output);
 		req.getRequestDispatcher(LOGIN_PATH).forward(req, resp);
 	}

@@ -29,10 +29,6 @@ public class ActionCommander {
 	private void init() {
 		actions.put("login", new LoginAction());
 		actions.put("register", new RegistrationAction());
-	}
-	
-	
-	
-	
+	}	
 
 }

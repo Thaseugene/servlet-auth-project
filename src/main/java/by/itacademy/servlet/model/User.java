@@ -1,7 +1,5 @@
 package by.itacademy.servlet.model;
 
-import java.util.UUID;
-
 public class User {
 
     private final String id;
