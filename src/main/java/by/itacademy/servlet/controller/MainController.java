@@ -9,6 +9,9 @@ import java.io.IOException;
 public class MainController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
+    private static final String LOGIN_TEMPLATE = "login";
+    private static final String OUTPUT_TEMPLATE = "error";
+    private static final String MAIN_PAGE_PATH = "/mainPage.jsp";
 
 	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -18,13 +21,13 @@ public class MainController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String userName = (String) req.getSession().getAttribute("login");
+        String userName = (String) req.getSession().getAttribute(LOGIN_TEMPLATE);
         if (userName != null) {
-            req.setAttribute("output", userName);
-            getServletContext().getRequestDispatcher("/mainPage.jsp").forward(req, resp);
+            req.setAttribute(OUTPUT_TEMPLATE, userName);
+            getServletContext().getRequestDispatcher(MAIN_PAGE_PATH).forward(req, resp);
         } else {
-            req.setAttribute("output", "Anonymous");
-            getServletContext().getRequestDispatcher("/mainPage.jsp").forward(req, resp);
+            req.setAttribute(OUTPUT_TEMPLATE, "Anonymous");
+            getServletContext().getRequestDispatcher(MAIN_PAGE_PATH).forward(req, resp);
         }
     }
 
