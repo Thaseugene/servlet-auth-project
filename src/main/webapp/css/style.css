@@ -1,51 +1,14 @@
-.form-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
-.login-form-1{
-    padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+.icon-block {
+  padding: 0 15px;
 }
-.login-form-1 h3{
-    text-align: center;
-    color: #333;
+.icon-block .material-icons {
+	font-size: inherit;
 }
-.login-container form{
-    padding: 10%;
-}
-.btnSubmit {
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    border: none;
-    cursor: pointer;
-}
-.login-form-1 {
-    font-weight: 600;
-    color:  #0062cc;
-    background-color: #f2f2f3;
-}
-
-.btnSubmit {
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
-
-.btn-primary {
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
-
-.login-form-1 .Not-a-Member .To-login{
-    color: #0062cc;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.text-container {
-    margin-bottom: 40px;
-}
-

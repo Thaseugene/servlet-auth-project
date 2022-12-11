@@ -27,7 +27,7 @@ public class UserStorage {
     }
 
     private void init() {
-        userTable.put("user", new User("1", "user", "user"));
+        userTable.put("user", new User("1", "user", "user", "user", "user"));
     }
 
 }

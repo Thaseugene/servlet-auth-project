@@ -1,9 +1,10 @@
 package by.itacademy.servlet.repository;
 
+import java.util.Optional;
+import java.util.UUID;
+
 import by.itacademy.servlet.model.User;
 import by.itacademy.servlet.storage.UserStorage;
-
-import java.util.UUID;
 
 public class UserRepository {
 
@@ -21,9 +22,9 @@ public class UserRepository {
         return instance;
     }
 
-    public void addUser(String userName, String password) {
+    public void addUser(String login, String password, String userName, String userSurname) {
         String id = UUID.randomUUID().toString();
-        userStorage.getUserTable().put(userName, new User(id, userName, password));
+        userStorage.getUserTable().put(login, new User(id, login, password, userName, userSurname));
     }
 
     public boolean checkIsUserExists(String userName) {
@@ -37,6 +38,10 @@ public class UserRepository {
                         .getPassword()
                         .equals(userPassword);
     }
+    
+    public Optional<User> getUserByLogin(String login) {
+		return Optional.of(userStorage.getUserTable().get(login));
+	}
 
 
 }
