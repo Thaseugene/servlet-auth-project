@@ -11,7 +11,7 @@ public class MainPageInfoAction implements IAction{
     private static final String LOGIN_TEMPLATE = "login";
     private static final String ANON_TEMPLATE = "Anonimous";
     private static final String OUTPUT_TEMPLATE = "output";
-    private static final String MAIN_PAGE_PATH = "/start.jsp";
+    private static final String MAIN_PAGE_PATH = "/WEB-INF/jsp/start.jsp";
 
 	@Override
 	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

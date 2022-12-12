@@ -16,7 +16,7 @@ public class ShowProfileAction implements IAction {
 	private static final String USER_TEMPLATE = "user";
 	private static final String FORMATTER = "yyyy-MM-dd HH:mm:ss";
 	private static final String REG_DATE = "registrationDate";
-	private static final String PROFILE_PATH = "/profile.jsp";
+	private static final String PROFILE_PATH = "/WEB-INF/jsp/profile.jsp";
 	private static final String MAIN_PATH = "/main";
 
 	private final UserRepository userRepository;

@@ -18,7 +18,7 @@ public class RegistrationAction implements IAction {
 	private static final String ERROR_TEMPLATE = "error";
 	private static final String OUTPUT_TEMPLATE = "output";
 
-	private static final String REG_PATH = "/registration.jsp";
+	private static final String REG_PATH = "/WEB-INF/jsp/registration.jsp";
 
 	private final UserRepository userRepository;
 

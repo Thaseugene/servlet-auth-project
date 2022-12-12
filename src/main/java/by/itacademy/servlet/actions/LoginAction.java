@@ -15,7 +15,7 @@ public class LoginAction implements IAction {
 	private static final String PASSWORD_TEMPLATE = "password";
 	private static final String ERROR_TEMPLATE = "error";
 	private static final String MAIN_PATH = "/profile";
-	private static final String LOGIN_PATH = "/login.jsp";
+	private static final String LOGIN_PATH = "/WEB-INF/jsp/login.jsp";
 
 	private final UserRepository userRepository;
 

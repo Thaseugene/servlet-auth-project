@@ -7,8 +7,8 @@
   <title>Application</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="${pageContext.request.contextPath}/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="${pageContext.request.contextPath}/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body class="grey lighten-5">
@@ -52,7 +52,7 @@
             </button>
           </div>
           <div class="input-field col s6 offset-s3">
-            <a href="${pageContext.request.contextPath}/registration.jsp" class="Not-a-Member">Not a member ?</a>
+            <a href="${pageContext.request.contextPath}/WEB-INF/jsp/registration.jspstration.jsp" class="Not-a-Member">Not a member ?</a>
           </div>
         </div>
         </form>
@@ -84,8 +84,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="${pageContext.request.contextPath}/js/materialize.js"></script>
+  <script src="${pageContext.request.contextPath}/js/init.js"></script>
 
 </body>
 
