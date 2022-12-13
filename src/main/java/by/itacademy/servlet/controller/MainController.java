@@ -23,20 +23,13 @@ public class MainController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		if (req.getMethod().equals(HttpMethodType.GET.toString())) {
 			actionCommander.getActions().get(getServletConfig().getInitParameter(ACTION_TYPE_TEMPLATE)).execute(req, resp);
 		}
-	}
+	
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		if (req.getMethod().equals(HttpMethodType.POST.toString())) {
-			actionCommander.getActions().get(getServletConfig().getInitParameter(ACTION_TYPE_TEMPLATE)).execute(req, resp);
+		doGet(req, resp);
 		}
 	}
 	
-	
-	
-	
-
-}
