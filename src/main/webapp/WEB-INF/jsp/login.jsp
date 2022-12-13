@@ -52,7 +52,7 @@
             </button>
           </div>
           <div class="input-field col s6 offset-s3">
-            <a href="${pageContext.request.contextPath}/WEB-INF/jsp/registration.jspstration.jsp" class="Not-a-Member">Not a member ?</a>
+            <a href="${pageContext.request.contextPath}/WEB-INF/jsp/registration.jsp" class="Not-a-Member">Not a member ?</a>
           </div>
         </div>
         </form>
